@@ -1,6 +1,6 @@
 # Secret Santa Generator
 
-Very basice command-line tool to generate giver-receiver pairs from a list of partecipants. The associations are done via numpy.random.shuffle function. If a partecipant is mapped to itself, try again. For small groups this approach is acceptable, for larger ones I have not tried directly, but it is not so efficient; let me try to elaborate.
+Very basic command-line tool to generate giver-receiver pairs from a list of partecipants. The associations are done via numpy.random.shuffle function. If a partecipant is mapped to itself, try again. For small groups this approach is acceptable, for larger ones I have not tried directly, but it is not so efficient; let me try to elaborate.
 
 Given $N$ ordered integers, there are $N!$ permutations without repetitions. What is fraction of these permutation in which no element is left at its original position, i.e. there are not fixed points? Turns out it's the _subfactoria_ $!N$, and what we are trying to do is a derangement [https://en.wikipedia.org/wiki/Derangement]. What is important for us is that the ratio between the permutation without fix point and all possible permutations quickly converges $\lim_{N\to \infty} !N/N! \to 1/e \approx 0.37$. 
 
