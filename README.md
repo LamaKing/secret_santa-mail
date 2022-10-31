@@ -14,8 +14,8 @@ The script takes the input as a json, like the example one in the repository:
     "partecipants": {
         "Alice": "alice@gmail.com",
         "Bob": "bob@outlook.com",
-        "John": "john@live.com",
-        "Jane": "jane@what.ever"
+        "John Doe": "john@live.com",
+        "Jane Doe": "jane@what.ever"
     }
 }
 ```
